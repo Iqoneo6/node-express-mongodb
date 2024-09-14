@@ -1,6 +1,10 @@
+
 module.exports = {
-  apps : [{
-    name: "sample",
-    script: 'server.js',
-    watch: '.'
-  }]
+  apps: [
+    {
+      name: "billing",
+      script: "index.js",
+      watch: true,
+    },
+  ],
+};
