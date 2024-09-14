@@ -1,4 +1,4 @@
-name: spabackend
+name: spabackend1
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
 
       # Start PM2 application
     - name: Start PM2 application
-      run: pm2 start ecosystem.config.js 
+      run: pm2 start ecosystem.config.js --env production 
 
 
     # Check PM2 Status for Debugging
