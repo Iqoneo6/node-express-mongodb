@@ -1,5 +1,5 @@
 
-name: Github 
+name: CI and CD flow
 
 on:
   push:
