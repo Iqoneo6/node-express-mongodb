@@ -1,4 +1,5 @@
-name: BackEnd
+
+name: spa_server
 
 on:
   push:
@@ -23,16 +24,12 @@ jobs:
 
       # Start PM2 application
     - name: Start PM2 application
-      run: pm2 start ecosystem.config.js 
-
-    # Check PM2 Status for Debugging
-    - name: Check PM2 Status
-      run: pm2 status
+      run: pm2 start ecosystem.config.js --env production
 
     # Graceful reload of the PM2 process
     - name: Reload PM2 application
       run: pm2 reload all
 
-    # Restart Nginx to ensure it's running after PM2
-    - name: Restart Nginx
-      run: sudo service nginx restart
+     # Restart Nginx to ensure it's running after PM2
+    # - name: Restart nginx service
+    #   run: sudo service nginx restart
