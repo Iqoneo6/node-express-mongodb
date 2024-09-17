@@ -1,5 +1,5 @@
 
-name: Ci Flow
+name: CI CD FLOW
 
 on:
   push:
