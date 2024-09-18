@@ -28,7 +28,7 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to bezkoder application." });
+  res.json({ message: "This is sachin S.R Devops enginner from theni." });
 });
 
 require("./app/routes/turorial.routes")(app);
