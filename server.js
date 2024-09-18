@@ -28,7 +28,11 @@ db.mongoose
 
 // simple route
 app.get("/", (req, res) => {
+<<<<<<< HEAD
   res.json({ message: "Hi Hello world." });
+=======
+  res.json({ message: "This is sachin S.R Devops enginner from theni." });
+>>>>>>> 3dd6cd41c43d68a46596894866c2e46def217ce0
 });
 
 require("./app/routes/turorial.routes")(app);

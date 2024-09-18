@@ -1,4 +1,5 @@
-name: Github_Action
+
+name: spa_server1
 
 on:
   push:
@@ -29,6 +30,6 @@ jobs:
     - name: Reload PM2 application
       run: pm2 reload all
 
-    # Restart Nginx to ensure it's running after PM2
+    # # Restart Nginx to ensure it's running after PM2
     # - name: Restart nginx service
     #   run: sudo service nginx restart
