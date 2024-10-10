@@ -12,7 +12,7 @@ module.exports = {
       },
       env_production: {
         NODE_ENV: 'production',
-        PORT: 8000,
+        PORT: 5000,
       },
     },
   ],
